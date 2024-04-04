@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: #ddd;
+    margin: 15px;
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-areas:
+        "logo   nav    nav     nav"
+        "main   main   banner  banner"
+        "main   main   banner2 banner2"
+        "footer footer footer  footer";
+}
+body {
+    font-family: system-ui;
+    color: white;
+}
+.grid-item {
+    background: yellowgreen;
+    padding: 15px;
+    font-size: 2em;
+}
+.one {
+    grid-area: logo;
+}
+.two {
+    grid-area: nav;
+}
+.three {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.four {
+    grid-area: banner;
+}
+.five {
+    grid-area: banner2;
+}
+.six {
+    grid-area: footer;
+}
+.icon {
+    background: green;
+    padding: 15px;
+    width: 35px;
+    text-align: center;
+}
