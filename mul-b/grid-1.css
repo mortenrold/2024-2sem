@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: system-ui;
+}
+.container {
+    background: #ddd;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 1000px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+.grid-items {
+    background: limegreen;
+    padding: 15px;
+    color: white;
+    font-size: 2em;
+}
