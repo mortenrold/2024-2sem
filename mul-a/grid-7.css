@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: system-ui;
+}
+.container {
+    background: #ddd;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 1000px;
+    display: grid;
+    gap: 15px;
+    /* hvis man indsætter et punktum i sit grid-area, kommer der tim "white space" på den plads */
+    grid-template-areas:
+        "logo   nav    nav     nav"
+        ".      main   banner  banner"
+        ".      main   .       banner2"
+        "footer footer footer  footer";
+}
+.grid-items {
+    background: lightgreen;
+    padding: 15px;
+    color: white;
+    font-size: 2em;
+}
+.one {
+    grid-area: logo;
+}
+.two {
+    grid-area: nav;
+}
+.three {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.four {
+    grid-area: banner;
+}
+.five {
+    grid-area: banner2;
+}
+.six {
+    grid-area: footer;
+}
+.icon {
+    background: green;
+    padding: 15px;
+    width: 35px;
+    text-align: center;
+}
